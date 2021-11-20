@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+from sklearn.tree import DecisionTreeRegressor
 
 data = pickle.load(open("saved_steps.pkl", "rb"))
 regressor = data["model"]
