@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-data = pickle.load(open("C:\\Users\\DELL\\Downloads\\stack-overflow-developer-survey-2021\\saved_steps.pkl", "rb"))
+data = pickle.load(open("saved_steps.pkl", "rb"))
 regressor = data["model"]
 le_country = data["le_country"]
 le_education = data["le_education"]
